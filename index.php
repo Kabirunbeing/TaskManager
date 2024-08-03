@@ -1,17 +1,27 @@
-
 <?php
-$Associative = [
-    'name' => 'kabeer',
-    'age' => 25,
-    'address' => 'gandhi nagar, bangalore',
-    'hobbies' => ['reading', 'painting', 'cooking']
-];
 
-function toUppercase($value) {
-    return is_array($value) ? array_map('toUppercase', $value) : strtoupper($value);
+$kabeer = 'am a string';
+echo strtoupper($kabeer);
+echo ltrim($kabeer);
+
+
+$str = "apple,banana,cherry";
+$array = explode(",", $str);
+print_r($array); 
+
+ $stri = "explding,this";
+ $cringe = explode("," , $stri);
+ print_r($cringe);
+
+ 
+$shit = ['arrays,are,shit'];
+
+foreach ($shit as $shits) {
+    if ($shits) {
+        $kabeer = explode(",", $shits);
+        print_r($kabeer); 
+    } else {
+        echo "kabeer\n";
+    }
 }
-
-$uppercaseAssociative = array_map('toUppercase', $Associative);
-
-print_r($uppercaseAssociative);
 ?>
